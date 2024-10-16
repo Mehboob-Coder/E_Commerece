@@ -262,7 +262,7 @@
                                         <span class="arrow top"></span>
                                     </a>
                                     <div class="dropdown-menu p-15">
-                                        <form action="search_results.html" method="POST" name="search_form">
+                                        <form action="{% url 'search_results' %}" method="POST" name="search_form">
                                             {% csrf_token %}
                                             <div class="input-group">
                                                 <input type="text" name="Search" placeholder="Search"
